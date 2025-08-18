@@ -1,21 +1,18 @@
-# Compilados de Java
+# Java compilados
 *.class
 
-# Directorios de construcción de NetBeans
+# NetBeans build
 /build/
 /dist/
 /nbbuild/
 /nball/
 /nbdist/
-/.nb-gradle/
 
-# Configuración privada del proyecto (no es necesaria en Git)
+# Configuración privada de NetBeans
 /nbproject/private/
 
-# Archivos temporales y logs
+# Archivos temporales, logs y de sistema
 *.log
 *.tmp
-
-# Archivos del sistema (según SO)
 /.DS_Store
 /Thumbs.db
