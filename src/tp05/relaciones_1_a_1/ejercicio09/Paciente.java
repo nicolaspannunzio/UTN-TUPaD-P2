@@ -5,9 +5,23 @@
 package tp05.relaciones_1_a_1.ejercicio09;
 
 /**
- *
- * @author nicol
+ * Clase Paciente
  */
 public class Paciente {
-    
+    private String nombre;
+    private String obraSocial;
+
+    public Paciente(String nombre, String obraSocial) {
+        this.nombre = nombre;
+        this.obraSocial = obraSocial;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getObraSocial() {
+        return obraSocial;
+    }
 }
+

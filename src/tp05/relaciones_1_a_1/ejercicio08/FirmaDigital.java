@@ -5,9 +5,30 @@
 package tp05.relaciones_1_a_1.ejercicio08;
 
 /**
- *
- * @author nicol
+ * Clase FirmaDigital
+ * Agregacion: FirmaDigital -> Usuario
  */
 public class FirmaDigital {
-    
+    private String codigoHash;
+    private String fecha;
+    private Usuario usuario;
+
+    public FirmaDigital(String codigoHash, String fecha, Usuario usuario) {
+        this.codigoHash = codigoHash;
+        this.fecha = fecha;
+        this.usuario = usuario;
+    }
+
+    public String getCodigoHash() {
+        return codigoHash;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
 }
+

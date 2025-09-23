@@ -5,9 +5,22 @@
 package tp05.relaciones_1_a_1.ejercicio09;
 
 /**
- *
- * @author nicol
+ * Clase Profesional
  */
 public class Profesional {
-    
+    private String nombre;
+    private String especialidad;
+
+    public Profesional(String nombre, String especialidad) {
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
 }

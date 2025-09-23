@@ -4,10 +4,12 @@
  */
 package tp05.dependencias_de_uso.ejercicio12;
 
-/**
- *
- * @author nicol
- */
 public class Prueba {
-    
+    public static void main(String[] args) {
+        Contribuyente c = new Contribuyente("Nicolas", 85000);
+        Impuesto i = new Impuesto(c);
+        Calculadora calc = new Calculadora();
+        calc.sumar(i);
+    }
 }
+

@@ -4,10 +4,9 @@
  */
 package tp05.dependencias_de_uso.ejercicio12;
 
-/**
- *
- * @author nicol
- */
 public class Calculadora {
-    
+    public void sumar(Impuesto impuesto) {
+        Contribuyente c = impuesto.getContribuyente();
+        System.out.println("Sumando sueldo de " + c.getNombre() + ": $" + c.getSueldo());
+    }
 }

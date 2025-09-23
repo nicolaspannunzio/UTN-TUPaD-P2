@@ -5,9 +5,37 @@
 package tp05.relaciones_1_a_1.ejercicio10;
 
 /**
- *
- * @author nicol
+ * Clase CuentaBancaria
+ * Composicion: CuentaBancaria -> ClaveSeguridad
+ * Asociacion bidireccional: CuentaBancaria <-> Titular
  */
 public class CuentaBancaria {
-    
+    private String cbu;
+    private double saldo;
+    private ClaveSeguridad clave;
+    private Titular titular;
+
+    public CuentaBancaria(String cbu, double saldo, ClaveSeguridad clave, Titular titular) {
+        this.cbu = cbu;
+        this.saldo = saldo;
+        this.clave = clave;
+        this.titular = titular;
+        titular.setCuenta(this); // establece la relacion bidireccional
+    }
+
+    public String getCbu() {
+        return cbu;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public ClaveSeguridad getClave() {
+        return clave;
+    }
+
+    public Titular getTitular() {
+        return titular;
+    }
 }
